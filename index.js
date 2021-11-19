@@ -19,7 +19,7 @@ function add(a, b) {
   // Action: Greet the user by name
   // Output: The greeting (string)
   function greet(name) {
-    return `Hi, ${name}`
+    return `Hi, ${name}! Come on in.`
   }
   
   // Input: age (number)
@@ -47,7 +47,7 @@ function add(a, b) {
   function admit(age, name) {
     // write your code here
     // use greet, isAnAdult and yearsToAdulthood to help you!
-    if (isAnAdult(age)) return `Hi, ${name}! Come on in.`
+    if (isAnAdult(age)) return greet(name)
     return `${name} ,go learn JS and come back in ${yearsToAdulthood(age)} years`
   }
   
